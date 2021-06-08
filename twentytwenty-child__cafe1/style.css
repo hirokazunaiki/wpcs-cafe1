@@ -1,0 +1,469 @@
+/*
+Theme Name: Twenty Twenty Child (Cafe1)
+Template: twentytwenty
+Text Domain: twentytwenty
+Version: 1.0
+*/
+
+@import url('../twentytwenty/style.css');
+
+
+/* -------------------------------------------------------------------------- */
+
+/*	Document Setup
+/* -------------------------------------------------------------------------- */
+
+/* Fonts: Font Awesome ---------------------------- */
+
+@font-face {
+	font-family: "Font Awesome";
+	font-display: swap;
+	src: url(./assets/fonts/FontAwesome/fa-brands-400.woff2) format("woff2");
+}
+
+@font-face {
+	font-family: "Font Awesome";
+    font-display: swap;
+	src: url(./assets/fonts/FontAwesome/fa-regular-400.woff2) format("woff2");
+}
+
+@font-face {
+	font-family: "Font Awesome";
+    font-display: swap;
+	src: url(./assets/fonts/FontAwesome/fa-solid-900.woff2) format("woff2");
+}
+
+/* Fonts: Spartan---------------------------- */
+
+@font-face {
+	font-family: "Spartan";
+	font-weight: 100 900;
+    font-style: normal;
+	font-display: swap;
+	src: url(./assets/fonts/Spartan/Spartan-VariableFont_wght.ttf);
+}
+
+/* Fonts: Noto Sans JP ---------------------------- */
+
+@font-face {
+	font-family: "Noto Sans JP";
+	font-weight: 100;
+	font-style: normal;
+	font-display: swap;
+	src: url(./assets/fonts/Noto_Sans_JP/NotoSansJP-Thin.otf);
+}
+
+@font-face {
+	font-family: "Noto Sans JP";
+	font-weight: 300;
+	font-style: normal;
+	font-display: swap;
+	src: url(./assets/fonts/Noto_Sans_JP/NotoSansJP-Light.otf);
+}
+
+@font-face {
+	font-family: "Noto Sans JP";
+	font-weight: 400;
+	font-style: normal;
+	font-display: swap;
+	src: url(./assets/fonts/Noto_Sans_JP/NotoSansJP-Regular.otf);
+}
+
+@font-face {
+	font-family: "Noto Sans JP";
+	font-weight: 500;
+	font-style: normal;
+	font-display: swap;
+	src: url(./assets/fonts/Noto_Sans_JP/NotoSansJP-Medium.otf);
+}
+
+@font-face {
+	font-family: "Noto Sans JP";
+	font-weight: 700;
+	font-style: normal;
+	font-display: swap;
+	src: url(./assets/fonts/Noto_Sans_JP/NotoSansJP-Bold.otf);
+}
+
+@font-face {
+	font-family: "Noto Sans JP";
+	font-weight: 900;
+	font-style: normal;
+	font-display: swap;
+	src: url(./assets/fonts/Noto_Sans_JP/NotoSansJP-Black.otf);
+}
+
+
+/* -------------------------------------------------------------------------- */
+
+/*	Element Base
+/* -------------------------------------------------------------------------- */
+
+body {
+    font-family: "Spartan", "Noto Sans JP", sans-serif !important;
+    font-weight: 300;
+}
+
+* {
+    font-family: "Spartan", "Noto Sans JP", sans-serif !important;
+}
+
+
+/* -------------------------------------------------------------------------- */
+
+/*	Entry Content
+/* -------------------------------------------------------------------------- */
+
+.entry-content {
+    font-size: 1.2rem;
+}
+
+.entry-content p {
+    line-height: 1.6;
+}
+
+
+/* -------------------------------------------------------------------------- */
+
+/*	Site Header
+/* -------------------------------------------------------------------------- */
+
+/* Site Title ---------------------------- */
+
+.site-title {
+    font-weight: 400;
+}
+
+/* Primary Menu ---------------------------- */
+
+.header-inner {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    text-shadow: 0 0 2px rgba(0, 0, 0, 0.8);
+}
+
+ul.primary-menu {
+    font-weight: 400;
+}
+
+.primary-menu li.current-menu-item > a {
+	text-decoration: none;
+}
+
+/* Site Description ---------------------------- */
+
+.site-description {
+    font-size: 1.3rem;
+    font-weight: 400;
+}
+
+/* Toggle ---------------------------- */
+
+.nav-toggle .toggle-inner {
+    height: auto;
+    padding-top: 0;
+}
+
+.mobile-nav-toggle-icon {
+    width: 50px;
+    height: 50px;
+    position: relative;
+    cursor: pointer;
+}
+
+.mobile-nav-toggle-icon span {
+    position: absolute;
+    left: 18px;
+    height: 2px;
+    display: inline-block;
+    background: #fff;
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.8);
+}
+
+.mobile-nav-toggle-icon span:nth-of-type(1) {
+    top: 22px;
+    width: 50%;
+}
+
+.mobile-nav-toggle-icon span:nth-of-type(2) {
+    top: 29px;
+    width: 30%;
+}
+
+/* Modal ---------------------------- */
+
+.modal-menu li a {
+    font-weight: 400 !important;
+}
+
+
+/* -------------------------------------------------------------------------- */
+
+/*	Template: Cover Template
+/* -------------------------------------------------------------------------- */
+
+.cover-header-inner {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cover-header-inner .entry-title {
+    font-size: 3rem;
+    font-weight: 100;
+    line-height: 2;
+    text-align: left;
+    word-break: keep-all;
+}
+
+/* Button: Arrow ---------------------------- */
+
+.to-the-content-wrapper {
+    display: none;
+}
+
+/* Scroll Down Animation ---------------------------- */
+
+.scrolldown {
+	position: absolute;
+    bottom: 0;
+	left: 50%;
+	z-index: 10;
+    height: 5rem;
+}
+
+.scrolldown span {
+	position: absolute;
+	left: -3rem;
+	top: -2rem;
+    width: 6rem;
+	color: #fff;
+	font-size: 1.5rem;
+    font-weight: 500;
+	text-align: center;
+	white-space: nowrap;
+}
+
+.scrolldown::after{
+	content: "";
+	position: absolute;
+	top: 0;
+	width: 0.2rem;
+	height: 3rem;
+	background: #fff;
+	animation: linedown 1.4s ease-in-out infinite;
+	opacity:0;
+}
+@keyframes linedown {
+	0%{
+		height:0;
+		top:0;
+		opacity: 0;
+	}
+	30%{
+		height: 3rem;
+		opacity: 1;
+	}
+	100%{
+		height:0;
+		top: 5rem;
+		opacity: 0;
+	}
+}
+
+
+/* -------------------------------------------------------------------------- */
+
+/*	Front Page
+/* -------------------------------------------------------------------------- */
+
+/* Heading ---------------------------- */
+
+.entry-content .heading-jp {
+    font-size: 1.6rem !important;
+    font-weight: 400;
+    margin-top: 0;
+}
+
+.entry-content .heading-en {
+    font-size: 3.2rem !important;
+    font-weight: 400;
+    margin-bottom: 0;
+}
+
+/* CONCEPT ---------------------------- */
+
+#concept p {
+    line-height: 2;
+}
+
+/* MENU ---------------------------- */
+
+#menu h3 {
+    font-size: 1.8rem;
+    font-weight: 400;
+    margin-bottom: 1rem;
+}
+
+#menu .wp-block-columns .wp-block-column .wp-block-image img {
+    width: 90%;
+    height: auto;
+    margin: 0 auto;
+}
+
+#menu .wp-block-columns:nth-child(odd) .wp-block-column:nth-of-type(1) .wp-block-image img {
+    border-radius: 60% 40% 66% 34% / 51% 66% 34% 49%;
+}
+
+#menu .wp-block-columns:nth-child(odd) .wp-block-column:nth-of-type(2) .wp-block-image img {
+    border-radius: 31% 69% 34% 66% / 55% 44% 56% 45%;
+}
+
+#menu .wp-block-columns:nth-child(odd) .wp-block-column:nth-of-type(3) .wp-block-image img {
+    border-radius: 65% 35% 47% 53% / 79% 52% 48% 21%;
+}
+
+#menu .wp-block-columns:nth-child(even) .wp-block-column:nth-of-type(1) .wp-block-image img {
+    border-radius: 65% 35% 47% 53% / 79% 52% 48% 21%;
+}
+
+#menu .wp-block-columns:nth-child(even) .wp-block-column:nth-of-type(2) .wp-block-image img {
+    border-radius: 60% 40% 66% 34% / 51% 66% 34% 49%;
+}
+
+#menu .wp-block-columns:nth-child(even) .wp-block-column:nth-of-type(3) .wp-block-image img {
+    border-radius: 31% 69% 34% 66% / 55% 44% 56% 45%;
+}
+
+#menu p {
+    font-size: 1.3rem;
+}
+
+/* ACCESS ---------------------------- */
+
+#access h3 {
+    font-size: 2.4rem;
+    font-weight: 400;
+}
+
+#access iframe {
+    border-radius: 0.5rem;
+    width: 100%;
+    max-width: 100% !important;
+}
+
+#access h3 ~ p {
+    font-size: 1.4rem;
+    margin-bottom: 0;
+}
+
+#access h4 {
+    font-size: 1.8rem;
+    font-weight: 400;
+    margin-bottom: 1rem;
+}
+
+/* CONTACT ---------------------------- */
+
+#contact h3 {
+    font-size: 1.8rem;
+    font-weight: 400;
+}
+
+#contact .tel,
+#contact .mail {
+    margin-bottom: 0;
+    font-size: 2rem;
+    white-space: nowrap;
+}
+
+#contact .tel + p,
+#contact .mail + p {
+    font-size: 1.3rem;
+}
+
+#contact .tel:before {
+    content: "\f095";
+    font-family: "Font Awesome";
+    font-size: 0.8em;
+    margin-right: 0.5em;
+}
+
+#contact .mail:before {
+    content: "\f0e0";
+    font-family: "Font Awesome";
+    font-size: 0.8em;
+    margin-right: 0.5em;
+}
+
+
+/* -------------------------------------------------------------------------- */
+
+/*	Site Footer
+/* -------------------------------------------------------------------------- */
+
+/* Copyright ---------------------------- */
+
+.footer-copyright {
+    font-size: 1.4rem;
+    font-weight: 300;
+}
+
+
+/* -------------------------------------------------------------------------- */
+
+/*	Media Queries
+/* -------------------------------------------------------------------------- */
+
+@media ( max-width: 374px ) {
+    .cover-header-inner .entry-title {
+        font-size: 2.4rem;
+    }
+}
+
+@media ( max-width: 768px ) {
+    .cover-header-inner .entry-header-inner {
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        writing-mode: vertical-rl;
+    }
+}
+
+@media ( min-width: 700px ) {
+    .entry-content {
+        font-size: 1.4rem;
+    }    
+    .cover-header-inner .entry-title {
+        font-size: 4rem;
+    }
+    #contact .tel,
+    #contact .mail {
+        font-size: 3rem;
+    }
+}
+
+@media ( min-width: 1000px ) {
+    .cover-header-inner .entry-title {
+        font-size: 5rem;
+    }
+}
+
+@media ( min-width: 1220px ) {
+	.cover-header-inner .entry-title {
+		font-size: 6rem;
+	}
+}

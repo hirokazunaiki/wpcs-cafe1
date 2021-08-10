@@ -190,6 +190,10 @@ ul.primary-menu {
     width: 30%;
 }
 
+button.close-nav-toggle {
+	outline: 0;
+}
+
 /* Modal ---------------------------- */
 
 .modal-menu li a {
